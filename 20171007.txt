@@ -11,8 +11,8 @@
 - Channel 1 Peak	235.89 us
 - Delta			96.94 us
 - Samples/sec		2M sps
-- Channel 0 Delay block		2M sps * 0 us			~= 0 samples
-- Channel 1 Delay blokc		2M sps * 96.94 us	~= 193 samples
+- Channel 0 Delay block		2M sps * 0 us		~= 0 samples
+- Channel 1 Delay block		2M sps * 96.94 us	~= 193 samples
 
 *** Suggestion ***
 - Put delay fixing in another tab so the sliders are available but not taking up space from the main dash. That way they can be adjusted/configured and then switch back to relevant section.
