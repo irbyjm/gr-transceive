@@ -206,7 +206,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>163</value>
+      <value>0</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -760,7 +760,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>0</value>
     </param>
     <param>
       <key>fftsize</key>
@@ -1043,7 +1043,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(688, 278)</value>
+      <value>(712, 294)</value>
     </param>
     <param>
       <key>gui_hint</key>

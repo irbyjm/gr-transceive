@@ -1,0 +1,43 @@
+1350-1450 (1 hr)
+1530-1600 (0.5 hr)
+
+* Moved test dipole and test cross-dipole into CNL
+* Ettus receiving on test cross-dipole
+	- Delay is better compared to 2x Ettus antenna
+	- Test cross-dipole is lambda/2 (4?) spaced
+
+*** Testing ***
+- Channel 0 Peak	332.53 us
+- Channel 1 Peak	235.89 us
+- Delta			96.94 us
+- Samples/sec		2M sps
+- Channel 0 Delay block		2M sps * 0 us			~= 0 samples
+- Channel 1 Delay blokc		2M sps * 96.94 us	~= 193 samples
+
+*** Suggestion ***
+- Put delay fixing in another tab so the sliders are available but not taking up space from the main dash. That way they can be adjusted/configured and then switch back to relevant section.
+
+### ISSUES ###
+Forcing delay to one channel does not always seem effective between successive runs of GNU Radio flow graph (i.e., requiring a delay of 193 samples one run while needing 0 sample delay the next).
+
+### HINT (pro-tip) ###
+Set 'Auto' Trigger in QT GUI Time Sink
+
+### NOTE ###
+SDR PC: 192.168.10.1/24
+N210 1 (ER20P0UP): 192.168.10.2
+N210 2 (F3AC64)  : 192.168.10.3
+Must disconnect from GMU network to communicate with Ettus
+	Dual NIC would be preferable
+
+UHD: USRP Source config:
+	Device Address		addr0=192.168.10.2, addr1=192.168.10.3
+	Device Arguments	""
+	Clock Rate (Hz)		Default
+	Num Mboards		2
+	Mb0: Clock Source	Default
+	Mb0: Time Source	Default
+	Mb1: Clock Source	MIMO Cable
+	Mb1: Time Source	MIMO Cable
+	Num Channels		2
+	Samp Rate (Sps)		samp_rate (?)
