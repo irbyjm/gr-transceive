@@ -1,0 +1,20 @@
+1450-1550 (1 hr)
+1600-1700 (1 hr)
+1730-1800 (0.5 hr)
+
+* Adjusted LPF on Delay output to 25 KHz w/ 1k Transition width to see both low and high frequencies in the GUI Time Sink
+  - with the original 1 KHz LPF only the low frequency was visible--the high frequency was filtered out and only noise was visible (expected behavior)
+* Configured QT GUI Time Sink to have 'Auto' Trigger by default
+* Reconfigured the frequency slider to only have 900-MHz amateur band
+
+*** Testing ***
+- Transmitted [0,1,0,1,...] signal using HackRF to receive with cross-dipole and 2xEttus
+  - Adjusted shift on one frequency and then observed the shift on the other to be wildly different.
+  - A shift of 127 samples at low frequency be fix pi/2 shift while the same shift of 127 samples at high frequency will shift ~2*2pi
+
+- Changing samp_rate on receiver from 2M to 96k makes receiver waterfall look more like sender waterfall; but the center frequency is not at 915 MHz and the FSK is not 20 KHz, more like 12 KHz
+  - There is visible low-amplitude aliasing on receiver waterfall (centered around 915 MHz)
+  - LPF seems to be working well; spectrum outside of LPF is dead
+
+### ISSUES ###
+- Delay configured for low frequency (0 KHz shift) is not the same for high frequency (20 KHz shift)
