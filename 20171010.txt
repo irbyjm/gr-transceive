@@ -1,0 +1,37 @@
+1330-1400 (0.5 hr)
+1500-1600 (1 hr)
+1630-2030 (4 hr)
+
+* Updated HackRF firmware from 2015.07.1 to 2017.02.1
+* Received frequency is
+  - 195002.8 kHz instead of 195000 kHz
+  - 192012.5 kHz instead of 195020 kHz
+  + aliasing?
+* Added user 'sdrgroup' to 'usrp' group
+  - changed /etc/security/limits.conf
+    @usrp - rtprio  50 -> @usrp - rtprio  99
+    (per USRP Hardware Driver and USRP Manual)
+    - this removed error messages about scheduling
+* Removed Throttle block to remove error message after fixing scheduling
+* Calibrated the N210s (because the second one never was)
+  - uhd_cal_rx_iq_balance (both dboards)
+* Added Ubuntu Ettus repository
+  - installed libuhd-dev
+  - updated libuhd003, uhd-host
+* Removed Ubuntu Ettus repository and removed GNU Radio, et al.
+  - Because installing Ettus repo broke everything
+    - Do not reinstall this
+
+### TESTING ###
+20171010 1707
+  Low: 915005.8 kHz
+  High: 915025.8 kHz
+  Delta: 20 kHz
+  - though there is faint aliasing below 915000 kHz
+  - might need to mix with 5.8 kHz cosine to correct for this
+    - test with Doppler shift first; compare with transmitter
+
+*** RESULTS ***
+- Waterfall is showing all frequencies +4 kHz
+- Doppler shift is from 914994 kHz to 915034 kHz
+- Channel 1 is showing stronger aliasing than Channel 0
