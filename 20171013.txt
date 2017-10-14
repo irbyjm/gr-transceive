@@ -1,0 +1,11 @@
+2200-0000 (2 hr)
+
+* Compiled and installed https://github.com/dl1ksv/gr-ax25
+  $ cd /src/gr-ax25
+  $ mkdir build; cd build
+  $ cmake -DCMAKE_INSTALL_PREFIX=/usr/lib/x86_64-linux-gnu/cmake/gnuradio ../
+  $ make ; sudo make install
+
+### ISSUES ###
+* Do not attempt reinstallation of gr-ax25 as it led to segfault on GNU Radio Companion start-up.
+  - try 'sudo apt-get purge gnuradio' next time everything dies for potentially speedier rebuild--normal removal and reinstallation did not do the trick (/etc/gnuradio/conf.d was not being repopulated after reinstallations)
