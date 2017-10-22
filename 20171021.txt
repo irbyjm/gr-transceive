@@ -1,0 +1,18 @@
+1400-1500 (1 hr)
+1730-1800 (0.5 hr)
+1830-1945 (1.75 hr)
+2000-2200 (2 hr)
+
+* Adjusted sampling rate and bandwidth of transmission flowgraph
+  - Was able to get transmission speed to increase (perhaps patched)
+  - GUI Waterfall Sink connected to output of Rational Resampler on transmitter shows a lot of noise and signal BER
+
+*** TEST RESULTS ***
+- Reception frequency is ~ 4 kHz above expected
+- Initial success with Doppler correction
+  - Sender and receiver Doppler shift needs to be synchronized (i.e., Gpredict) otherwise correction is only accurate for some of the samples
+    - UDP sender/receiver?
+      - This may not work over MASON-SECURE WiFi due to peer security
+
+### TODO ###
+- Salvage NIC from Pentium 4 chassis
