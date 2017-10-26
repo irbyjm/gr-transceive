@@ -1,4 +1,4 @@
-2030-
+2030-2200 (1.5 hr)
 
 * Connected laptop to Ubuntu PC through crossover adapter
   Laptop: 192.168.1.2/24
