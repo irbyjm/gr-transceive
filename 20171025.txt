@@ -1,0 +1,31 @@
+2030-
+
+* Connected laptop to Ubuntu PC through crossover adapter
+  Laptop: 192.168.1.2/24
+  Ubuntu: 192.168.1.128/24
+
+  Ping: OK
+  UDP/1234: OK
+
+* Implemented DemodCombined flowgraph into BFSK receiver
+  - Could not visually tell if it was operating correctly
+
+*** RESULTS ***
+- Receiver is given the approx. value of the Doppler shift (e.g. frequency triangle) and adjusts to a vertical waterfall. The background noise can be seen to adjust as well.
+
+*** bpf testing ***
+LO: 914995-7 (-4:-5)
+HI: 915015-7 (15:16)
+
+### ISSUES ###
+- BPF not liking -5->-4 kHz lower and 15->16 kHz upper
+Traceback (most recent call last):
+  File "/home/sdrgroup/src/gr-transceive/top_block.py", line 341, in <module>
+    main()
+  File "/home/sdrgroup/src/gr-transceive/top_block.py", line 329, in main
+    tb = top_block_cls()
+  File "/home/sdrgroup/src/gr-transceive/top_block.py", line 213, in __init__
+    1, samp_rate, -5e3, -4e3, 20, firdes.WIN_HAMMING, 6.76))
+  File "/usr/lib/python2.7/dist-packages/gnuradio/filter/filter_swig.py", line 186, in band_pass
+    return _filter_swig.firdes_band_pass(*args, **kwargs)
+RuntimeError: firdes check failed: 0 < fa <= sampling_freq / 2
