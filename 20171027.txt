@@ -1,0 +1,7 @@
+1730-1900 (1.5 hr)
+
+* Connected HackRF to Ettus using y-splitter and 10dB attenuator on each leg to N210s.
+  -48 dB reception in Frequency Sink when 0.8 Multiply Const used on transmitter
+* Enabled Real-time Scheduling in flowgraph Options block
+  - no obvious errors
+  - ~290% utilization (vs ~240% without RTprio)
