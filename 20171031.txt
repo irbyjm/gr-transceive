@@ -1,0 +1,11 @@
+1830-2230 (4 hr)
+
+* Shifted received RF from Ettus by -6 kHz to center FSK frequencies
+  - verified good in Waterfall sink
+
+### ISSUES ###
+* Transmission is not good at higher rates
+  - 01010101 at 96 kHz sampling does not look correct when sending in Waterfall (but looks good on receiver?)
+  - 0000000010101011111111 does not look correct so play with sampling between transmitter and receiver
+* Moving Average is not pulse-shaping the square wave (why?)
+* Without pulse shaping Clock Recovery is not working

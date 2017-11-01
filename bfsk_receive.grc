@@ -449,6 +449,56 @@
     </param>
   </block>
   <block>
+    <key>variable_qtgui_label</key>
+    <param>
+      <key>comment</key>
+      <value>Moving Average should be outputing
+pulse-shaped square-wave so the 
+Clock Recovery MM block turns the pulse
+peaks into -1 and 1 or 0 and 1. This 0 and
+1 will get turned into PDU by pn_decode
+
+https://github.com/ThomasHabets/radiostuff/tree/master/gr-habets
+https://blog.habets.se/2017/04/Decoding-FSK.html</value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>formatter</key>
+      <value>None</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(864, 461)</value>
+    </param>
+    <param>
+      <key>gui_hint</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>variable_qtgui_label_0</value>
+    </param>
+    <param>
+      <key>label</key>
+      <value></value>
+    </param>
+    <param>
+      <key>type</key>
+      <value>int</value>
+    </param>
+  </block>
+  <block>
     <key>analog_const_source_x</key>
     <param>
       <key>alias</key>
@@ -562,7 +612,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1000, 220)</value>
+      <value>(1096, 220)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -676,7 +726,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(272, 288)</value>
+      <value>(248, 288)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -739,7 +789,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(448, 144)</value>
+      <value>(424, 152)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -963,7 +1013,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(800, 99)</value>
+      <value>(864, 99)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1073,7 +1123,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1008, 113)</value>
+      <value>(1104, 113)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1120,7 +1170,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(704, 252)</value>
+      <value>(712, 260)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1175,7 +1225,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(480, 500)</value>
+      <value>(712, 308)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1226,7 +1276,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1016, 270)</value>
+      <value>(1112, 270)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1387,11 +1437,11 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(488, 585)</value>
+      <value>(696, 361)</value>
     </param>
     <param>
       <key>_rotation</key>
-      <value>0</value>
+      <value>180</value>
     </param>
     <param>
       <key>id</key>
@@ -1658,7 +1708,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(992, 352)</value>
+      <value>(1088, 344)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1843,7 +1893,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1016, 462)</value>
+      <value>(1056, 446)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -2202,7 +2252,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1000, 30)</value>
+      <value>(1096, 30)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -2561,7 +2611,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1000, 150)</value>
+      <value>(1096, 150)</value>
     </param>
     <param>
       <key>gui_hint</key>
