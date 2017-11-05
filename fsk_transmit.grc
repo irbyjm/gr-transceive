@@ -1359,7 +1359,7 @@
     </param>
     <param>
       <key>vector</key>
-      <value>[-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1]</value>
+      <value>[-1,-1,-1,1,-1,1,-1,1,-1,-1,1,1]</value>
     </param>
   </block>
   <block>
