@@ -1,0 +1,17 @@
+1600-2200 (6 hr)
+
+* Attempted to increase Vector Source sampling throttle (input rate) to 9600*2
+  - samp_rate = 9600 => OK
+  - samp_rate = 19200 => Invalid transmission
+* Inserted BPF into chain between HackRF and Ettus (plus -10 dB attenuator) and the data was still received
+  - After further inspection the BPF shifted received frequencies by approx. 1 kHz. Adjusting the input cosine mix to -5000 Hz has moved the received frequencies back into the receive bandpass filtering.
+* Added LPF to Quad Demod block because the Moving Average filter was not working as expected.
+
+### NOTES ###
+- Do not turn off Doppler shift on transmitter since the receiver expects it; will lose the majority of the input signal
+- With one -10 dB attenuator and no Y-splitter the Ettus received -25 dB signal
+
+### ISSUES ###
+Transmission of 000101010011 is not correct -from the transmitter end-
+  - The receiver is receiving what we are seeing on the transmitter Waterfall but this is clearly not the aforementioned binary vector.
+  - We cannot hope to decode properly if the transmitter is not spitting out the correct values.
