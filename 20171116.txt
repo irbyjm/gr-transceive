@@ -1,0 +1,17 @@
+1600-1700 (1 hr)
+1930-2130 (2 hr)
+
+* Output new transmitter flowgraph to HackRF and are able to distinguish the vector on a GUI Time Sink (not yet bit sliced or cleaned up)
+  - This should mean we can change vector sink to some ASCII characters and transmit; might be some manual labor at first decoding bytes
+* Top Block freezes with Waterfall and Time Sink both visible on receiver
+  - 375% CPU usage during operation for some reason
+  - Changed Waterfall to Update Period 0.1 and the output stops freezing
+
+* Started experimenting with File Sink outputs
+
+### RESULTS ###
+32-bit input
+16ms period
+32/16ms = 2 kbps
+
+The rate skyrockets if using MM Clock Recovery (not sure how this block works)
