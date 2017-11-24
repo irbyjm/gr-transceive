@@ -1,5 +1,0 @@
-[ 2626.256179] traps: python[8474] general protection ip:7f60ef32fc36 sp:7f60b27
-f3e18 error:0 in libuhd.so.003.009[7f60ef256000+723000]
-[ 4172.904151] traps: python[11172] general protection ip:7fd24626ec36 sp:7fd215
-ffae18 error:0 in libuhd.so.003.009[7fd246195000+723000]
-
