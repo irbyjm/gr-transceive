@@ -1,4 +1,14 @@
-1400-
+1400-2000 (6 hr)
+2100-2200 (1 hr)
 
 * Reassembled SDR lab (gutted due to corner construction)
 * Added Clock Recovery and Packer to flowgraph; output to File sink
+* Received two binary file outputs
+  - source0_pack8.bin
+  - source1_pack8.bin
+  * Can look at reception from each polarization and look at decodings from each
+
+#### TODO ####
+- Need to align output bits to header 10101010
+  - Output into binary file are periodic but off by some bits
+  - Either bit flipped or delayed by a bit(s)

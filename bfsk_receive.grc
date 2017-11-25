@@ -116,6 +116,87 @@
     </param>
     <param>
       <key>_enabled</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(872, 5)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>bpf_max</value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>12e3</value>
+    </param>
+  </block>
+  <block>
+    <key>variable</key>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(792, 5)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>bpf_min</value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>8e3</value>
+    </param>
+  </block>
+  <block>
+    <key>variable</key>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(952, 5)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>bpf_trans</value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>1e3</value>
+    </param>
+  </block>
+  <block>
+    <key>variable</key>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
       <value>True</value>
     </param>
     <param>
@@ -589,7 +670,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1024, 92)</value>
+      <value>(888, 92)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -746,7 +827,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(200, 112)</value>
+      <value>(208, 112)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -982,7 +1063,7 @@
     </param>
     <param>
       <key>high_cutoff_freq</key>
-      <value>12e3</value>
+      <value>bpf_max</value>
     </param>
     <param>
       <key>id</key>
@@ -994,7 +1075,7 @@
     </param>
     <param>
       <key>low_cutoff_freq</key>
-      <value>8e3</value>
+      <value>bpf_min</value>
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -1010,7 +1091,7 @@
     </param>
     <param>
       <key>width</key>
-      <value>100</value>
+      <value>bpf_trans</value>
     </param>
     <param>
       <key>win</key>
@@ -1061,7 +1142,7 @@
     </param>
     <param>
       <key>high_cutoff_freq</key>
-      <value>14e3</value>
+      <value>bpf_max</value>
     </param>
     <param>
       <key>id</key>
@@ -1073,7 +1154,7 @@
     </param>
     <param>
       <key>low_cutoff_freq</key>
-      <value>6e3</value>
+      <value>bpf_min</value>
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -1089,7 +1170,7 @@
     </param>
     <param>
       <key>width</key>
-      <value>100</value>
+      <value>bpf_trans</value>
     </param>
     <param>
       <key>win</key>
@@ -1379,7 +1460,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(784, 310)</value>
+      <value>(744, 310)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1944,7 +2025,7 @@
     </param>
     <param>
       <key>omega_relative_limit</key>
-      <value>0.005</value>
+      <value>0.001</value>
     </param>
     <param>
       <key>omega</key>
@@ -2007,7 +2088,7 @@
     </param>
     <param>
       <key>omega_relative_limit</key>
-      <value>0.005</value>
+      <value>0.001</value>
     </param>
     <param>
       <key>omega</key>
