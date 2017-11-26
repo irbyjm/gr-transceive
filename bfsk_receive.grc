@@ -343,6 +343,33 @@
     </param>
   </block>
   <block>
+    <key>variable</key>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(1040, 5)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>demod_gain</value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>-50</value>
+    </param>
+  </block>
+  <block>
     <key>variable_function_probe</key>
     <param>
       <key>block_id</key>
@@ -514,7 +541,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(0, 365)</value>
+      <value>(1136, 5)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -670,7 +697,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(888, 92)</value>
+      <value>(816, 132)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -678,7 +705,7 @@
     </param>
     <param>
       <key>gain</key>
-      <value>-2</value>
+      <value>demod_gain</value>
     </param>
     <param>
       <key>id</key>
@@ -721,7 +748,7 @@
     </param>
     <param>
       <key>gain</key>
-      <value>-2</value>
+      <value>demod_gain</value>
     </param>
     <param>
       <key>id</key>
@@ -1051,7 +1078,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(664, 83)</value>
+      <value>(624, 83)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1915,7 +1942,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1112, 409)</value>
+      <value>(1112, 313)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1993,7 +2020,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1048, 224)</value>
+      <value>(1032, 160)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -2525,7 +2552,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1080, 559)</value>
+      <value>(1080, 519)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -2884,7 +2911,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1080, 471)</value>
+      <value>(1080, 391)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -3341,7 +3368,7 @@
     </param>
     <param>
       <key>bw0</key>
-      <value>0</value>
+      <value>80e3</value>
     </param>
     <param>
       <key>center_freq0</key>
@@ -3649,7 +3676,7 @@
     </param>
     <param>
       <key>bw1</key>
-      <value>0</value>
+      <value>80e3</value>
     </param>
     <param>
       <key>center_freq1</key>

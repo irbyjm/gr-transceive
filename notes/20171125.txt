@@ -1,0 +1,3 @@
+1530-1900 (3.5 hr)
+
+* Started a Python script which would clean up the binary File Sink data for increased reception accuracy.
