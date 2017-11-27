@@ -1,0 +1,28 @@
+1630-1800 (1.5 hr)
+1930-2200 (2.5 hr)
+
+* Took 6-minute capture from Laptop to Dual Ettus
+  - source0_pack8.bin:
+      43197 bits
+      189 full strings
+  - source0_pack8.bin.fixed:
+      40491 bits
+      2245 full strings
+  - source1_pack8.bin
+      43259 bits
+      147 full strings
+  - source1_pack8.bin.fixed
+      40473 bits
+      2238 full strings
+* Captured File Sink off Rational Resamplers for 96 ksps dump to binary file; 265 Mb per file vs 275 Mb expected (~3% deviation)
+* Restarted flowgraph solely using File Sources
+  - tremendous amount of noise for most of the time
+* Captured File Sink off Doppler-corrected Multipliers for 96 ksps dump to binary file; this should be far more accurate
+  - cannot decode captured file without the proper shift values...
+    - this is why file was sometimes good and usually bad.
+
+  #### RESULTS ####
+  * 11-15x increase in readable data after fix_decode.py
+  * Flowgraph produces ~550 Mb per 6-minute run
+    - Binary file produces reproducible results, however
+      - In MUCH faster time...
