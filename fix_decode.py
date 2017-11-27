@@ -35,8 +35,12 @@ else:
             # pad the binary indicator '0b' back onto the data
             newline = int('0b'+line, 2)
 
-            # write the binary into the new file
-            outfile.write(binascii.unhexlify('%x' % newline))
+            try:
+                # write the binary into the new file
+                outfile.write(binascii.unhexlify('%x' % newline))
+            except:
+                # do nothing?
+                True
 
     # housecleaning!
     readfile.close()
