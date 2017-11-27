@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# 201711125 irbyjm
 
 # import sys to have command line argument for file name
 # import binascii to easily convert between hexadecimal, ASCII, and binary
@@ -36,9 +37,11 @@ else:
             newline = int('0b'+line, 2)
 
             try:
+
                 # write the binary into the new file
                 outfile.write(binascii.unhexlify('%x' % newline))
             except:
+
                 # do nothing?
                 True
 
