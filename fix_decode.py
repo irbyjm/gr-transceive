@@ -8,7 +8,7 @@ import binascii
 # make sure a filename is specified else dump usage text
 if len(sys.argv) == 1:
     print("Usage: ./fix_decode.py [file]")
-    
+
 else:
     # open desired file for reading into readfile
     readfile = open(sys.argv[1], "rb")
@@ -30,7 +30,7 @@ else:
 
         # make sure each line is some multiple of 8 bits long otherwise
         # there are missing or extra bits which won't be able to decode
-        if len(line) % 8 == 0:
+        if len(line) % 8 == 0 and len(line) != 0:
 
             # pad the binary indicator '0b' back onto the data
             newline = int('0b'+line, 2)
