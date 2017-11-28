@@ -1,0 +1,38 @@
+1230-1330 (1 hr)
+1630-1900 (2.5 hr)
+2030-
+
+* Transmitted to Ettus MIMO using Bazooka Dipole from 5' and was able to decode a decent amount of transmissions
+* Added polarizations together into Ettus MIMO using simple addition block for decode testing
+
+#### RESULTS ####
+* 6 minutes of reception
+  sum_receive.grc
+    dual_pack8.bin          478
+    dual_pack8.bin.fixed    2128
+  bfsk_receive.grc
+    source0_pack8.bin       297
+    source0_pack8.bin.fixed 2127
+    source1_pack8.bin       9
+    source1_pack8.bin.fixed 2123
+* 8 minutes of reception ()
+  sum_receive.grc
+    dual_pack8.bin          934
+    dual_pack8.bin.fixed    2763
+* 6 minutes of reception (coupler)
+  sum_receive.grc
+    dual_pack8.bin          356
+    dual_pack8.bin.fixed    2185
+* 6 minutes of reception (6" extension)
+  sum_receive.grc
+    dual_pack8.bin          253
+    dual_pack8.bin.fixed    2194
+
+dual: -56 dB
+ett1: -60 dB
+ett2: -60 dB
+
+#### NOTES ####
+* Add block seems to double signal strength vs single polarizations separate
+* Polarizations summed without Delay modification do not stomp on received data
+  - MIMO and Ethernet switch seem to be taking care of time offsets
