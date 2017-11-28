@@ -1,6 +1,6 @@
 1230-1330 (1 hr)
 1630-1900 (2.5 hr)
-2030-
+2030-2300 (2.5 hr)
 
 * Transmitted to Ettus MIMO using Bazooka Dipole from 5' and was able to decode a decent amount of transmissions
 * Added polarizations together into Ettus MIMO using simple addition block for decode testing
