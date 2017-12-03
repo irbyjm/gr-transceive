@@ -18,7 +18,9 @@ else:
     outfile = open(sys.argv[1]+".fixed", "wb")
 
     # read entire input file into hexin (it will be all hex)
+    # then close the input file
     hexin = readfile.read()
+    readfile.close()
 
     # convert this massive hex string into integer and then binary
     # strip '0b' binary indicator from the front for further processing
@@ -31,20 +33,22 @@ else:
 
         # make sure each line is some multiple of 8 bits long otherwise
         # there are missing or extra bits which won't be able to decode
+        # NOTE: this step is lossy, some code could be added to zero-pad
+        # the line to get more decodes, though wrong, back out
         if len(line) % 8 == 0 and len(line) != 0:
 
             # pad the binary indicator '0b' back onto the data
             newline = int('0b'+line, 2)
 
+            # try block added due to exception on failed binary to hex decodes
             try:
 
                 # write the binary into the new file
                 outfile.write(binascii.unhexlify('%x' % newline))
             except:
 
-                # do nothing?
+                # skip broken decodes
                 True
 
-    # housecleaning!
-    readfile.close()
+    # close the output file nicely
     outfile.close()
